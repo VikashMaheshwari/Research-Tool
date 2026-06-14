@@ -1,23 +1,20 @@
 # ===== Web UI =====
-streamlit
+streamlit==1.58.0
 
-# ===== LangChain (LCEL + Runnables) =====
-langchain
+# ===== LLM provider + LangChain core (groq pulls a compatible langchain-core) =====
+langchain-groq
 langchain-core
 
-# ===== LLM Provider (Groq) =====
-langchain-groq
-
 # ===== Tool 1: Tavily Search =====
-tavily-python
+tavily-python==0.7.26
 
 # ===== Tool 2: BeautifulSoup Web Scraping =====
-beautifulsoup4
-lxml
-requests
+beautifulsoup4==4.15.0
+lxml==6.1.1
+requests==2.34.2
 
 # ===== Environment / Config =====
-python-dotenv
+python-dotenv==1.2.2
 
 # ===== Console formatting (used in tools.py) =====
 rich
