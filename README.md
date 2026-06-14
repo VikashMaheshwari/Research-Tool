@@ -162,7 +162,7 @@ Research-Tool/
 
 ## 🔒 Security
 
-Your `.env` file is **git-ignored** — never commit real API keys. The repo only
+`.env` file is **git-ignored** — never commit real API keys. The repo only
 includes `.env.example` with placeholders.
 
 ---
