@@ -8,6 +8,8 @@ Enter any topic and four specialised AI agents **search** the live web, **read**
 best source, **write** a structured report, and **critique** it — all from a polished
 Streamlit interface.
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Open_App-2dd4bf?logo=streamlit&logoColor=white)](https://research-tool-vik.streamlit.app)
+
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-UI-FF4B4B?logo=streamlit&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-LCEL-1C3C3C)
