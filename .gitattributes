@@ -1,0 +1,22 @@
+# Normalise line endings across operating systems
+* text=auto eol=lf
+
+# Windows-specific scripts keep CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Python
+*.py text diff=python
+
+# Docs
+*.md text
+
+# Binary files (never normalise)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.lock binary
