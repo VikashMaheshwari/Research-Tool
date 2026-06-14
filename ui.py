@@ -225,4 +225,30 @@ def section_header(eyebrow: str, title: str, desc: str = "") -> None:
         <div style="margin:1.6rem 0 1rem;">
             <div class="sec-eyebrow">{eyebrow}</div>
             <div class="sec-title">{title}</div>
-            {f'<div class="sec-desc">{desc}</div>'
+            {f'<div class="sec-desc">{desc}</div>' if desc else ''}
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def feature_card(icon: str, title: str, desc: str) -> str:
+    return (f'<div class="card"><div class="icon-badge">{icon}</div>'
+            f"<h3>{title}</h3><p>{desc}</p></div>")
+
+
+def quote_card(text: str, who: str, role: str) -> str:
+    return (f'<div class="quote"><p>“{text}”</p>'
+            f'<div class="who">{who}</div><div class="role">{role}</div></div>')
+
+
+def footer() -> None:
+    st.markdown(
+        f"""
+        <div class="footer">
+            <div>© 2026 {BRAND} · {TAGLINE}</div>
+            <div>Built with Streamlit · LangChain · Groq · Tavily</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )

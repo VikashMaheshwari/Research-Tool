@@ -8,3 +8,16 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Secrets / environment variables  (NEVER commit API keys)
+.env
+.env.*
+*.key
+
+# Editor / session artifacts
+.claude/
+.streamlit/secrets.toml
+
+# OS files
+.DS_Store
+Thumbs.db

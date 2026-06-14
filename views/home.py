@@ -101,4 +101,23 @@ t3.markdown(ui.quote_card(
     "Sourced, structured, and fast. It's become the first tab I open when I start a new topic.",
     "Maria L.", "PhD Student"), unsafe_allow_html=True)
 
-# -----------------------------------------------------
+# --------------------------------------------------------------------------- #
+# Final CTA
+# --------------------------------------------------------------------------- #
+st.write("")
+st.markdown(
+    """
+    <div class="card" style="text-align:center;background:
+        linear-gradient(135deg, rgba(232,182,90,0.18), rgba(200,146,47,0.08));">
+        <h3 style="font-family:'Fraunces',serif;font-size:1.6rem;">Ready to dig in?</h3>
+        <p style="font-size:1rem;">Pick a topic and let the agents do the heavy lifting.</p>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+cc1, cc2, cc3 = st.columns([1, 1, 1])
+with cc2:
+    if st.button("Open the Research Lab  →", use_container_width=True, key="cta_bottom"):
+        st.switch_page("views/research.py")
+
+ui.footer()
