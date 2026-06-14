@@ -1,45 +1,23 @@
-# ===== Core LangChain (LCEL + Runnables) =====
+# ===== Web UI =====
+streamlit
+
+# ===== LangChain (LCEL + Runnables) =====
 langchain
 langchain-core
-langchain-community
-langchain-openai
 
-# ===== Multi-agent orchestration (ReAct agent) =====
-langgraph
-langchain-experimental
-
-# ===== LLM Provider =====
-openai
+# ===== LLM Provider (Groq) =====
 langchain-groq
 
 # ===== Tool 1: Tavily Search =====
 tavily-python
-langchain-tavily
 
 # ===== Tool 2: BeautifulSoup Web Scraping =====
 beautifulsoup4
 lxml
 requests
-html5lib
 
 # ===== Environment / Config =====
 python-dotenv
-pydantic
-pydantic-settings
 
-# ===== Async Support =====
-aiohttp
-nest-asyncio
-
-# ===== Utilities =====
-typing-extensions
-tiktoken
-tenacity
+# ===== Console formatting (used in tools.py) =====
 rich
-
-# ===== Optional: Streamlit UI (if you build a frontend) =====
-streamlit
-
-# ===== Optional: Jupyter (for prototyping) =====
-jupyter
-ipykernel
